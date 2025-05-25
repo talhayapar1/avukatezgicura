@@ -1,0 +1,244 @@
+/* 
+ * Custom styles for Avukat Ezgi Cura Law Firm Website
+ */
+
+:root {
+  /* Color scheme */
+  --primary-color: #0a3d62; /* Navy blue */
+  --secondary-color: #d4af37; /* Gold */
+  --light-color: #f8f9fa; /* Light gray/white */
+  --dark-color: #343a40; /* Dark gray */
+  --text-color: #212529; /* Near black for text */
+  --footer-color: #0a3d62; /* Navy blue for footer */
+}
+
+/* Global styles */
+body {
+  font-family: 'Source Serif Pro', Georgia, serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Header and navigation */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.navbar-nav .nav-link {
+  color: var(--primary-color);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: var(--secondary-color);
+}
+
+/* Hero section */
+.hero {
+  background-image: linear-gradient(rgba(10, 61, 98, 0.8), rgba(10, 61, 98, 0.8)), url('../img/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 6rem 0;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Services section */
+.service-card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .card-title {
+  color: var(--primary-color);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+/* About section */
+.about-section {
+  background-color: var(--light-color);
+  padding: 4rem 0;
+}
+
+.team-member {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid var(--secondary-color);
+}
+
+/* Contact section */
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-icon {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-color);
+  color: white;
+  padding: 3rem 0 2rem;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
+}
+
+footer h5 {
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 0;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .service-card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Custom utility classes */
+.text-primary-custom {
+  color: var(--primary-color);
+}
+
+.text-secondary-custom {
+  color: var(--secondary-color);
+}
+
+.bg-primary-custom {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary-custom {
+  background-color: var(--secondary-color);
+}
+
+.bg-light-custom {
+  background-color: var(--light-color);
+}
+
+.section-padding {
+  padding: 4rem 0;
+}
+
+.section-title {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.section-title:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--secondary-color);
+  margin: 1rem auto 0;
+} 
